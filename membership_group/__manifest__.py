@@ -1,7 +1,7 @@
 ##############################################################################
 #
 #    Author: Tawasta
-#    Copyright 2020 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
+#    Copyright 2020 Futural Oy (https://futural.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -22,13 +22,14 @@
     "summary": "Add active members to a membership group",
     "version": "17.0.1.0.0",
     "category": "Website",
-    "website": "https://gitlab.com/tawasta/odoo/membership",
-    "author": "Tawasta",
+    "website": "https://github.com/tawasta/hr",
+    "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
     "external_dependencies": {"python": [], "bin": []},
     "depends": [
+        "product_pricelist",
         "subscription_oca",
         "website_slides",
     ],
@@ -36,7 +37,6 @@
         # "data/ir_cron.xml",
         "views/groups_view.xml",
         # "views/product_pricelist_views.xml",
-        "views/product_template_view.xml",
         "views/slide_channel.xml",
     ],
     "demo": [],
