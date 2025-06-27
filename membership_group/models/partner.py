@@ -76,8 +76,13 @@ class ResPartner(models.Model):
 
             else:
                 # Jos aktiivisia tilauksia ei ole, poista käyttöoikeudet
-                website = self.env["website"].get_current_website()
-                public_pricelist = website.pricelist_id
+                # website = self.env["website"].get_current_website()
+                # public_pricelist = website.pricelist_id
+                public_pricelist = (
+                    self.env["product.pricelist"]
+                    .sudo()
+                    .search([("selectable", "=", True)], limit=1)
+                )
 
                 for pa in all_partners:
                     user = pa.user_ids and pa.user_ids[0]
