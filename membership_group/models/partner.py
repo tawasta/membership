@@ -37,6 +37,15 @@ class ResPartner(models.Model):
         - slide channels
         """
 
+        # TODO: This is a dirty hack to avoid an error when "contract_lines" field
+        # is not present on the model. The field comes from "contract_page_partner",
+        # which would need to be a dependency of this module.
+        # "contract_page_partner" is however a bit aggressive as it alters computation
+        # and shown fields of partner a lot.
+        # This is done smarter in 17.0+
+        if len(self) > 0 and not hasattr(self[0], "contract_lines"):
+            return
+
         group_domain = [("membership_group", "=", True)]
         membership_groups = self.env["res.groups"].sudo().search(group_domain)
 
