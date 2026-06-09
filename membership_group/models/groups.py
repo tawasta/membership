@@ -10,6 +10,8 @@ class ResGroups(models.Model):
     membership_group = fields.Boolean(
         string="Is a membership group",
         default=False,
+        help="Users with an active subscription will be automatically added to "
+        "this group",
     )
 
     # 3. Default methods
