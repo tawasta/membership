@@ -9,7 +9,10 @@ class SlideChannel(models.Model):
     _inherit = "slide.channel"
 
     add_memberships = fields.Boolean(
-        string="Add members to this channel", default=False
+        string="Auto-add subscription members to this channel",
+        default=False,
+        help="Contacts with an ongoing subscription will be added automatically to "
+        "this channel, and removed if their subscription ends.",
     )
 
     @api.model
