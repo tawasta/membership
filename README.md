@@ -16,7 +16,7 @@ addon | version | maintainers | summary
 [membership_contract_menu](membership_contract_menu/) | 17.0.1.0.0 |  | Membership contract menu
 [membership_disable_qty_in_cart](membership_disable_qty_in_cart/) | 17.0.1.0.0 |  | Disable changing membership product quantity in cart
 [membership_disable_qty_in_product](membership_disable_qty_in_product/) | 17.0.1.0.0 |  | Disable changing membership product quantity in product page
-[membership_group](membership_group/) | 17.0.1.0.0 |  | Add active members to a membership group
+[membership_group](membership_group/) | 17.0.1.0.0 |  | Add automatically users with an ongoing subscription to a membership group
 [membership_pricelist_public_user](membership_pricelist_public_user/) | 17.0.1.0.0 |  | Membership pricelist for guest, if purchasing a membership
 [membership_product](membership_product/) | 17.0.1.0.0 |  | Membership Product
 [membership_state_compute_queue](membership_state_compute_queue/) | 17.0.1.0.0 |  | Make queue jobs for all membership state calculations

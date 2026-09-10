@@ -19,7 +19,8 @@
 ##############################################################################
 {
     "name": "Membership group for active members",
-    "summary": "Add active members to a membership group",
+    "summary": "Add automatically users with an ongoing subscription to a "
+    "membership group",
     "version": "17.0.1.0.0",
     "category": "Website",
     "website": "https://github.com/tawasta/hr",
