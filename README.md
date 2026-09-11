@@ -13,6 +13,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[membership_contract_lines_menu](membership_contract_lines_menu/) | 17.0.1.0.0 |  | Membership contract lines menu
 [membership_contract_menu](membership_contract_menu/) | 17.0.1.0.0 |  | Membership contract menu
 [membership_disable_qty_in_cart](membership_disable_qty_in_cart/) | 17.0.1.0.0 |  | Disable changing membership product quantity in cart
 [membership_disable_qty_in_product](membership_disable_qty_in_product/) | 17.0.1.0.0 |  | Disable changing membership product quantity in product page
