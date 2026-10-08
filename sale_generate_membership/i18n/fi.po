@@ -1,0 +1,304 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_generate_membership
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-13 11:50+0000\n"
+"PO-Revision-Date: 2024-02-13 11:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_generate_membership
+#: model:mail.template,subject:sale_generate_membership.email_template_family_member
+msgid ""
+"{{ object.company_id.name }} invites you to participate in a consent "
+"process"
+msgstr "{{ object.company_id.name }}: perhejäsenyytesi hyväksyminen"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_invite_consent
+msgid "Acceptance of the Contract"
+msgstr "Sopimuksen hyväksyminen"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_invite_consent
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_invite_consent
+msgid "Close"
+msgstr "Sulje"
+
+#. module: sale_generate_membership
+#: model:ir.model.constraint,message:sale_generate_membership.constraint_family_member_consent_code_unique
+msgid "Code has to be unique for every invite!"
+msgstr "Koodin tulee olla uniikki!"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__company_id
+msgid "Company"
+msgstr "Yritys"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_invite_consent
+msgid "Confirm Your Consent"
+msgstr "Hyväksyminen"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields.selection,name:sale_generate_membership.selection__product_template__membership_type__contact
+msgid "Contact"
+msgstr "Henkilö"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_invite_consent
+msgid "Continue to Accept"
+msgstr "Jatka hyväksymään"
+
+#. module: sale_generate_membership
+#: model:ir.model,name:sale_generate_membership.model_contract_contract
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__contract_id
+#: model:ir.model.fields,field_description:sale_generate_membership.field_sale_order__contract_id
+msgid "Contract"
+msgstr "Sopimus"
+
+#. module: sale_generate_membership
+#. odoo-python
+#: code:addons/sale_generate_membership/models/sale_order_line.py:0
+#, python-format
+msgid ""
+"Contract '%(contract)s' has multiple lines for '%(product)s'. Please close "
+"redundant contract lines."
+msgstr ""
+"Sopimuksella '%(contract)s' on useita rivejä tuotteelle '%(product)s'. "
+"Sulje ylimääräiset sopimusrivit."
+
+#. module: sale_generate_membership
+#: code:addons/sale_generate_membership/models/sale_order.py:0
+#: code:addons/sale_generate_membership/models/sale_order.py:0
+#, python-format
+msgid "Contract is required to create contract lines."
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_sale_order_line__contract_line_id
+msgid "Contract line"
+msgstr "Sopimusrivi"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_product__custom_consent_text_initial_msg
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_template__custom_consent_text_initial_msg
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.product_template_only_form_view
+msgid "Custom Consent Text: Initial Message"
+msgstr "Räätälöity lupanäkymän teksti: Alkunäkymän viesti"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_product__custom_consent_text_popup_msg
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_template__custom_consent_text_popup_msg
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.product_template_only_form_view
+msgid "Custom Consent Text: Popup Dialog Message"
+msgstr "Räätälöity lupanäkymän teksti: Popup-ikkunan viesti"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_product__custom_consent_text_confirmation_msg
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_template__custom_consent_text_confirmation_msg
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.product_template_only_form_view
+msgid "Custom Consent Text: Post-confirmation Message"
+msgstr "Räätälöity lupanäkymän teksti: Vahvistuksen jälkeinen viesti"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_contract_contract__display_name
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__display_name
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_template__display_name
+#: model:ir.model.fields,field_description:sale_generate_membership.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sale_generate_membership.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr "Näyttönimi"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_product__extra_products_ids
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_template__extra_products_ids
+msgid "Extra products"
+msgstr "Lisätuotteet"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields.selection,name:sale_generate_membership.selection__product_template__membership_type__family
+msgid "Family"
+msgstr "Perhe"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__family_member_id
+msgid "Family Member"
+msgstr "Perhejäsen"
+
+#. module: sale_generate_membership
+#: model:ir.actions.act_window,name:sale_generate_membership.action_family_member_consent
+#: model:ir.model,name:sale_generate_membership.model_family_member_consent
+#: model:ir.ui.menu,name:sale_generate_membership.menu_family_member_consent
+#: model:mail.template,name:sale_generate_membership.email_template_family_member
+msgid "Family Member Consent"
+msgstr "Perheenjäsenen suostumus"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_sale_order__family_members
+msgid "Family members"
+msgstr "Perheenjäsenet"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_contract_contract__id
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__id
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_template__id
+#: model:ir.model.fields,field_description:sale_generate_membership.field_sale_order__id
+#: model:ir.model.fields,field_description:sale_generate_membership.field_sale_order_line__id
+msgid "ID"
+msgstr "Tunniste (ID)"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__is_used
+msgid "Is Used"
+msgstr "On käytetty"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_product__membership_type
+#: model:ir.model.fields,field_description:sale_generate_membership.field_product_template__membership_type
+msgid "Membership Type"
+msgstr "Jäsenyyden tyyppi"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__order_id
+msgid "Order"
+msgstr "Tilaus"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_contract_contract__parent_contract_id
+msgid "Parent contract"
+msgstr "Liittyvä sopimus"
+
+#. module: sale_generate_membership
+#: model:ir.model,name:sale_generate_membership.model_product_template
+msgid "Product Template"
+msgstr "Tuotemalli"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_consent_success
+msgid "Return to Home Page"
+msgstr "Palaa etusivulle"
+
+#. module: sale_generate_membership
+#: model:ir.model,name:sale_generate_membership.model_sale_order
+msgid "Sales Order"
+msgstr "Myyntitilaus"
+
+#. module: sale_generate_membership
+#: model:ir.model,name:sale_generate_membership.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Myyntitilausrivi"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_invite_consent
+msgid "Save"
+msgstr "Tallenna"
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_contract_contract__note
+msgid "Terms and conditions"
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,help:sale_generate_membership.field_product_product__custom_consent_text_confirmation_msg
+#: model:ir.model.fields,help:sale_generate_membership.field_product_template__custom_consent_text_confirmation_msg
+msgid ""
+"Text shown to the user after they have given the consent, e.g. 'Your consent"
+" for the contract creation has been successfully registered.'"
+msgstr ""
+"Teksti joka näytetään käyttäjälle tämän myönnettyä luvan, esim. 'Suostumuksesi sopimuksen luomiseen "
+"on rekisteröity onnistuneesti.' "
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,help:sale_generate_membership.field_product_product__custom_consent_text_popup_msg
+#: model:ir.model.fields,help:sale_generate_membership.field_product_template__custom_consent_text_popup_msg
+msgid ""
+"Text shown to the user as they are about top confirm the consent in the  pop"
+" up, e.g. 'You are about to give your consent. Are you sure?'"
+msgstr ""
+"Teksti joka näytetään käyttäjälle tämän aukaistua luvan myöntämisen pop-upin, esim. 'Olet antamassa "
+"suostumuksesi. Oletko varma?' "
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,help:sale_generate_membership.field_product_product__custom_consent_text_initial_msg
+#: model:ir.model.fields,help:sale_generate_membership.field_product_template__custom_consent_text_initial_msg
+msgid ""
+"Text shown to the user as they first reach the consent page, e.g. 'You have "
+"been invited to accept a contract.'"
+msgstr ""
+"Teksti joka näytetään käyttäjälle tämän päädyttyä luvanmyöntämissivulle, esim. 'Sinut on kutsuttu "
+" hyväksymään sopimus.'"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_consent_success
+msgid "Thank You for Confirming!"
+msgstr "Kiitos vahvistuksesta!"
+
+#. module: sale_generate_membership
+#: code:addons/sale_generate_membership/models/sale_order.py:0
+#, python-format
+msgid "The sale order customer does not have an email address."
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__code
+msgid "Unique Code"
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,field_description:sale_generate_membership.field_family_member_consent__user_id
+msgid "Used by"
+msgstr ""
+
+#. module: sale_generate_membership
+#: model:ir.model.fields,help:sale_generate_membership.field_family_member_consent__user_id
+msgid "User who accepted the invitation"
+msgstr "Käyttäjä, joka hyväksyi kutsun"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_invite_consent
+msgid "You are about to give your consent. Are you sure?"
+msgstr "Olet antamassa suostumuksesi. Oletko varma?"
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_invite_consent
+msgid "You have been invited to accept a contract."
+msgstr "Sinut on kutsuttu hyväksymään sopimus."
+
+#. module: sale_generate_membership
+#: model_terms:ir.ui.view,arch_db:sale_generate_membership.contract_consent_success
+msgid ""
+"Your consent for the contract creation has been successfully registered."
+msgstr "Suostumuksesi sopimuksen luomiseen on rekisteröity onnistuneesti."
